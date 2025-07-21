@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# RAG Chat Application
 
-## Project info
+## Made by Team Sharanga
 
-**URL**: https://lovable.dev/projects/d2052d34-2c6f-4db2-ae24-f3848fc67ee4
+**Team Member 1:**
+- Name: Suraj Harlekar
+- Graduating Year: 2027
+- College: Indian Institute of Information Technology Kottayam
 
-## How can I edit this code?
+**Team Member 2:**
+- Name: Amruth Ayaan
+- Graduating Year: 2027
+- College: Indian Institute of Information Technology Kottayam
 
-There are several ways of editing your application.
+## Application Overview
 
-**Use Lovable**
+This is a modern Retrieval-Augmented Generation (RAG) application with a Claude.ai-inspired interface. The application allows users to upload documents, process them into vector embeddings, and chat with an AI that has access to the uploaded knowledge base.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d2052d34-2c6f-4db2-ae24-f3848fc67ee4) and start prompting.
+### Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Modern Chat Interface**: Claude.ai-style three-panel layout with sidebar, chat area, and context panel
+- **File Upload & Processing**: Support for PDF, TXT, and JSON files with automatic text extraction and chunking
+- **Vector Search**: Semantic search using DataStax Astra DB vector store with E5-Large-V2 embeddings
+- **RAG Implementation**: Context-aware responses using retrieved relevant document chunks
+- **Dark/Light Mode**: Toggle between beautiful light and dark themes
+- **Responsive Design**: Mobile-first design that works on all screen sizes
+- **Real-time Chat**: Streaming responses with typewriter effects
+- **Session Management**: Persistent chat history and session management
 
-**Use your preferred IDE**
+### How to Run
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Prerequisites**: Ensure you have Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Clone and Install**:
+   ```sh
+   # Clone the repository
+   git clone <YOUR_GIT_URL>
+   
+   # Navigate to project directory
+   cd <YOUR_PROJECT_NAME>
+   
+   # Install dependencies
+   npm install
+   ```
 
-Follow these steps:
+3. **Start Development Server**:
+   ```sh
+   # Start the frontend development server
+   npm run dev
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **Access the Application**:
+   - Open your browser and navigate to `http://localhost:5173`
+   - The application will be running with hot-reload enabled
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Frontend:**
+- React 18 with TypeScript
+- Vite (Build tool and dev server)
+- Tailwind CSS (Styling)
+- shadcn/ui (UI Components)
+- React Router (Routing)
+- TanStack Query (Data fetching)
+- Lucide React (Icons)
+- Next Themes (Dark/Light mode)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Backend Integration Ready:**
+- FastAPI (Python backend)
+- DataStax Astra DB (Vector database)
+- Hugging Face Transformers (LLM integration)
+- E5-Large-V2 (Text embeddings)
+- PyMuPDF (PDF processing)
 
-**Edit a file directly in GitHub**
+**Development Tools:**
+- TypeScript (Type safety)
+- ESLint (Code linting)
+- Class Variance Authority (Component variants)
+- React Hook Form (Form handling)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d2052d34-2c6f-4db2-ae24-f3848fc67ee4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Made by Amruth and Suraj*
